@@ -38,6 +38,8 @@ document.getElementById('mode').addEventListener('click', () => {
         mode.innerHTML = "Dark"
         body.classList.add("dark");
         body.classList.remove("light");
+        calcolatrice.classList.add("dark");
+        calcolatrice.classList.remove("light");
         document.querySelectorAll('#container-calcolatrice *').forEach(el => {
             el.classList.add('dark');
             el.classList.remove('light');
@@ -54,6 +56,8 @@ document.getElementById('mode').addEventListener('click', () => {
             el.classList.add('light');
             el.classList.remove('dark');
         });
+        calcolatrice.classList.add("light");
+        calcolatrice.classList.remove("dark");
     }
 });
 
