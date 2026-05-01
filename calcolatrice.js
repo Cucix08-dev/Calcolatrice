@@ -52,12 +52,13 @@ document.getElementById('mode').addEventListener('click', () => {
         mode.innerHTML = "Light"
         body.classList.remove("dark")
         body.classList.add("light")
+        calcolatrice.classList.add("light");
+        calcolatrice.classList.remove("dark");
         document.querySelectorAll('#container-calcolatrice *').forEach(el => {
             el.classList.add('light');
             el.classList.remove('dark');
         });
-        calcolatrice.classList.add("light");
-        calcolatrice.classList.remove("dark");
+        
     }
 });
 
