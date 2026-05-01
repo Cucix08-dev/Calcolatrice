@@ -29,8 +29,8 @@ div#container-mode{
 }
 
 #mode{
-    width: 250px;
-    height: 100px;
+    width: clamp(150px,20%,250px);
+    height: clamp(50px,10%,100px);
     display: flex;
     justify-content: center;
     align-items: center;
