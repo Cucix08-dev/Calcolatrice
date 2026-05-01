@@ -669,7 +669,6 @@ div#container-risultato.light{
     text-align: right;
     width: 90%;
     cursor: pointer;
-    color: white;
     border-radius: inherit;
 }
 
@@ -700,7 +699,6 @@ div.button{
     margin: auto;
     cursor: pointer;
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
@@ -708,10 +706,12 @@ div.button{
 }
 
 div.button.dark{
+    color: white;
     background-color: rgb(98, 98, 98);
 }
 
 div.button.light{
+    color: rgb(34, 34, 34);
     background-color: rgb(208, 208, 208);
     border: 3px solid rgb(98, 98, 98);
 }
