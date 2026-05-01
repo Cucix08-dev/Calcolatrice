@@ -22,7 +22,7 @@ body.white{
 
 div#container-mode{
     height: clamp(50px,7vh,125px);
-    margin: 10% auto;
+    margin: min(100px,10%) auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,11 +336,6 @@ div.button.dark{
     background-color: rgb(98, 98, 98);
 }
 
-div.trasparente.dark{
-    border: 3px solid rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 div.button.light{
     color: rgb(34, 34, 34);
     background-color: rgb(208, 208, 208);
@@ -370,6 +365,16 @@ div.segno.light{
 div.trasparente{
     background-color: rgba(0, 0, 0, 0.3) !important;
     filter: opacity(0.5) !important;
+}
+
+div.trasparente.dark{
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+svg{
+    width: clamp(8px,3vw,32px);
+    height: clamp(8px,3vw,32px);
 }
 
 /* ANIMATIONS */
