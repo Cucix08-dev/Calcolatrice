@@ -3,6 +3,8 @@ const operazione = document.querySelectorAll(".operazione");
 let risultato = document.getElementById("risultato");
 const body = document.getElementById("background")
 
+const calcolatrice = document.getElementById("container-calcolatrice");
+
 const mode = document.getElementById("mode");
 let darkTheme = true;
 
@@ -36,6 +38,11 @@ document.getElementById('mode').addEventListener('click', () => {
         mode.innerHTML = "Dark"
         body.classList.add("dark");
         body.classList.remove("light");
+        document.querySelectorAll('#container-calcolatrice *').forEach(el => {
+            el.classList.add('dark');
+            el.classList.remove('light');
+        });
+
     }
     else{
         mode.classList.remove("dark");
@@ -43,6 +50,10 @@ document.getElementById('mode').addEventListener('click', () => {
         mode.innerHTML = "Light"
         body.classList.remove("dark")
         body.classList.add("light")
+        document.querySelectorAll('#container-calcolatrice *').forEach(el => {
+            el.classList.add('light');
+            el.classList.remove('dark');
+        });
     }
 });
 

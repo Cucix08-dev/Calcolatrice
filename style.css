@@ -615,26 +615,35 @@ div#container-mode{
     }
 }
 
-
-
 /* CALCOLATRICE */
 
 div#container-calcolatrice{
     height: auto;
     width: 400px;
     border-radius: 30px;
-    background-color: rgb(89, 89, 89);
     margin: 70px auto;
-    border: 20px solid rgb(89, 89, 89);
     cursor: pointer;
 }
 
-div#container-calcolatrice:hover{
-    animation: ease-glow 0.4s ease-in-out forwards;
+div#container-calcolatrice.dark{
+    border: 20px solid rgb(89, 89, 89);
+    background-color: rgb(89, 89, 89);
+}
+
+div#container-calcolatrice.light{
+    border: 20px solid rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+}
+
+div#container-calcolatrice.dark:hover{
+    animation: ease-glow-dark 0.4s ease-in-out forwards;
+}
+
+div#container-calcolatrice.light:hover{
+    animation: ease-glow-light 0.4s ease-in-out forwards;
 }
 
 div#container-risultato{
-    background-color: rgb(60, 60, 60);
     aspect-ratio: 2/1;
     border-radius: 30px;
     font-size: 16px;
@@ -642,6 +651,14 @@ div#container-risultato{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+div#container-risultato.dark{
+    background-color: rgb(60, 60, 60);
+}
+
+div#container-risultato.light{
+    background-color: rgb(220, 220, 220);
 }
 
 #risultato{
@@ -656,6 +673,14 @@ div#container-risultato{
     border-radius: inherit;
 }
 
+#risultato.dark{
+    color: white;
+}
+
+#risultato.light{
+    color: rgb(0, 0, 0);
+}
+
 #risultato:focus{
     outline: none;
 }
@@ -668,7 +693,6 @@ div#container-tasti{
 }
 
 div.button{
-    background-color: rgb(98, 98, 98);
     border-radius: 10px;
     text-align: center;
     width: 99%;
@@ -683,13 +707,33 @@ div.button{
     font-size: 20px;
 }
 
-div.button:hover{
-    transform: scale(1.05);
-    animation: ease-glow 0.2s ease forwards;
+div.button.dark{
+    background-color: rgb(98, 98, 98);
 }
 
-div.segno{
+div.button.light{
+    background-color: rgb(208, 208, 208);
+    border: 3px solid rgb(98, 98, 98);
+}
+
+div.button:hover{
+    transform: scale(1.05);
+}
+
+div.button.dark:hover{
+    animation: ease-glow-dark 0.2s ease forwards;
+}
+
+div.button.light:hover{
+    animation: ease-glow-light 0.2s ease forwards;
+}
+
+div.segno.dark{
     background-color: orange;
+}
+
+div.segno.light{
+    background-color: rgb(0, 132, 255);
 }
 
 div.trasparente{
@@ -698,7 +742,7 @@ div.trasparente{
 }
 
 /* ANIMATIONS */
-@keyframes ease-glow{
+@keyframes ease-glow-dark{
     0% {
         box-shadow:
             0 0 2px rgb(95, 95, 95), 
@@ -721,6 +765,32 @@ div.trasparente{
             0 0 20px rgb(174, 174, 174),
             0 0 30px rgb(120, 120, 120),
             0 0 40px rgb(86, 86, 86);
+    }
+}
+
+@keyframes ease-glow-light{
+    0% {
+        box-shadow:
+            0 0 2px rgb(255, 255, 255), 
+            0 0 5px rgb(220, 220, 220),
+            0 0 7px rgb(161, 161, 161),
+            0 0 10px rgb(127, 127, 127);
+    }
+
+    50% {
+        box-shadow:
+            0 0 5px rgb(237, 237, 237), 
+            0 0 10px rgb(190, 190, 190),
+            0 0 15px rgb(151, 151, 151),
+            0 0 20px rgb(104, 104, 104);
+    }
+
+    100% {
+        box-shadow:
+            0 0 10px rgb(211, 211, 211), 
+            0 0 20px rgb(174, 174, 174),
+            0 0 30px rgb(144, 144, 144),
+            0 0 40px rgb(93, 93, 93);
     }
 }
 
