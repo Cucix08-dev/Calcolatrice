@@ -377,6 +377,14 @@ svg{
     height: clamp(8px,3vw,32px);
 }
 
+svg.dark{
+    stroke: white;
+}
+
+svg.light{
+    stroke: black;
+}
+
 /* ANIMATIONS */
 @keyframes ease-glow-dark{
     0% {
