@@ -22,7 +22,7 @@ body.white{
 
 div#container-mode{
     height: clamp(50px,7vh,125px);
-    margin: 6% auto;
+    margin: 10% auto;
     display: flex;
     justify-content: center;
     align-items: center;
