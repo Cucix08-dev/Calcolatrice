@@ -22,7 +22,7 @@ body.white{
 
 div#container-mode{
     height: clamp(50px,7vh,125px);
-    margin: 4% auto;
+    margin: 6% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@ div#container-calcolatrice{
     height: auto;
     width: clamp(300px, 50vw,500px);
     border-radius: 30px;
-    margin: 8% auto;
+    margin: auto;
     cursor: pointer;
 }
 
@@ -326,7 +326,7 @@ div.button{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
-    font-size: clamp(0.5rem, 2.2vw, 1.5rem);
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
 }
 
 
