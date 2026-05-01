@@ -243,7 +243,7 @@ div#container-mode{
 
 div#container-calcolatrice{
     height: auto;
-    width: 300px;
+    width: clamp(300px, 50%,500px);
     border-radius: 30px;
     margin: 70px auto;
     cursor: pointer;
