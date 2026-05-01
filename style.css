@@ -318,7 +318,7 @@ div#container-tasti{
 div.button{
     border-radius: 10px;
     text-align: center;
-    width: 99%;
+    width: 95%;
     aspect-ratio: 6/5;
     margin: auto;
     cursor: pointer;
@@ -326,7 +326,7 @@ div.button{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
-    font-size: 20px;
+    font-size: clamp(1em, 80%, 2em);
 }
 
 
