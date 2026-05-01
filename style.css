@@ -149,7 +149,7 @@ div#container-mode{
 }
 
 
-/* ANIMAZIONE LIGHT TO DARK A 30 FPS*/
+/* ANIMAZIONE LIGHT TO DARK*/
 
 @keyframes light-to-dark {
     0% {
