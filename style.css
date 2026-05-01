@@ -21,23 +21,23 @@ body.white{
 /* MODE */
 
 div#container-mode{
-    height: 125px;
-    margin: 50px auto;
+    height: clamp(50px,7vh,125px);
+    margin: 4% auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #mode{
-    width: clamp(150px,20%,250px);
-    height: clamp(50px,10%,100px);
+    width: clamp(150px, 20vw,250px);
+    aspect-ratio: 2/1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 999px;
-    font-size: 28px;
+    font-size: clamp(1.2rem,3.5vw,2rem);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 #mode:hover{
@@ -243,9 +243,9 @@ div#container-mode{
 
 div#container-calcolatrice{
     height: auto;
-    width: clamp(300px, 50%,500px);
+    width: clamp(300px, 50vw,500px);
     border-radius: 30px;
-    margin: 70px auto;
+    margin: 8% auto;
     cursor: pointer;
 }
 
@@ -326,7 +326,7 @@ div.button{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
-    font-size: clamp(1em, 80%, 2em);
+    font-size: clamp(0.5rem, 2.2vw, 1.5rem);
 }
 
 
