@@ -329,10 +329,16 @@ div.button{
     font-size: 20px;
 }
 
+
 div.button.dark{
     color: white;
     border: 3px solid rgb(98, 98, 98);
     background-color: rgb(98, 98, 98);
+}
+
+div.trasparente.dark{
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 div.button.light{
