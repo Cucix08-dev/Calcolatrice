@@ -331,6 +331,7 @@ div.button{
 
 div.button.dark{
     color: white;
+    border: 3px solid rgb(98, 98, 98);
     background-color: rgb(98, 98, 98);
 }
 
