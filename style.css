@@ -326,7 +326,7 @@ div.button{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
-    font-size: clamp(1rem, 3vw, 1.75rem);
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
 }
 
 
