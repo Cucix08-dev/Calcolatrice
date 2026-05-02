@@ -438,8 +438,88 @@ svg.light{
     }
 }
 
+@keyframes tap-glow-dark{
+    0% {
+        box-shadow:
+            0 0 2px rgb(95, 95, 95), 
+            0 0 5px rgb(79, 79, 79),
+            0 0 7px rgb(58, 58, 58),
+            0 0 10px rgb(31, 31, 31);
+    }
+
+    25% {
+        box-shadow:
+            0 0 5px rgb(133, 133, 133), 
+            0 0 10px rgb(117, 117, 117),
+            0 0 15px rgb(98, 98, 98),
+            0 0 20px rgb(67, 67, 67);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px rgb(200, 200, 200), 
+            0 0 20px rgb(174, 174, 174),
+            0 0 30px rgb(120, 120, 120),
+            0 0 40px rgb(86, 86, 86);
+    }
+
+    75% {
+        box-shadow:
+            0 0 5px rgb(133, 133, 133), 
+            0 0 10px rgb(117, 117, 117),
+            0 0 15px rgb(98, 98, 98),
+            0 0 20px rgb(67, 67, 67);
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes tap-glow-light{
+    0% {
+        box-shadow:
+            0 0 2px rgb(255, 255, 255), 
+            0 0 5px rgb(220, 220, 220),
+            0 0 7px rgb(161, 161, 161),
+            0 0 10px rgb(127, 127, 127);
+    }
+
+    25% {
+        box-shadow:
+            0 0 5px rgb(237, 237, 237), 
+            0 0 10px rgb(190, 190, 190),
+            0 0 15px rgb(151, 151, 151),
+            0 0 20px rgb(104, 104, 104);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px rgb(211, 211, 211), 
+            0 0 20px rgb(174, 174, 174),
+            0 0 30px rgb(144, 144, 144),
+            0 0 40px rgb(93, 93, 93);
+    }
+
+    75% {
+        box-shadow:
+            0 0 5px rgb(237, 237, 237), 
+            0 0 10px rgb(190, 190, 190),
+            0 0 15px rgb(151, 151, 151),
+            0 0 20px rgb(104, 104, 104);
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
 @media (max-width: 768px) and (orientation:portrait) {
-    div.button:hover{
-        animation: none;
+    div.button.dark:hover{
+        animation: tap-glow-dark 0.2s ease forwards;
+    }
+
+    div.button.light:hover{
+        animation: tap-glow-light 0.2s ease forwards;
     }
 }
