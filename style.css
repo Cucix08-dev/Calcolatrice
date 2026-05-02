@@ -326,7 +326,7 @@ div.button{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
-    font-size: clamp(1rem, 2.2vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 1.75rem);
 }
 
 
@@ -373,8 +373,8 @@ div.trasparente.dark{
 }
 
 svg{
-    width: clamp(8px,3vw,32px);
-    height: clamp(8px,3vw,32px);
+    width: clamp(18px,3vw,48px);
+    height: clamp(18px,3vw,48px);
 }
 
 svg.dark{
