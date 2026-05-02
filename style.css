@@ -385,6 +385,12 @@ svg.light{
     stroke: black;
 }
 
+::selection {
+    background: transparent;
+    color: inherit;
+}
+
+
 /* ANIMATIONS */
 @keyframes ease-glow-dark{
     0% {
