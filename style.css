@@ -1,3 +1,17 @@
+:root{
+    --glow-light:
+            0 0 10px rgb(211, 211, 211), 
+            0 0 20px rgb(174, 174, 174),
+            0 0 30px rgb(144, 144, 144),
+            0 0 40px rgb(93, 93, 93);
+    
+    --glow-dark: 
+            0 0 10px rgb(200, 200, 200), 
+            0 0 20px rgb(174, 174, 174),
+            0 0 30px rgb(120, 120, 120),
+            0 0 40px rgb(86, 86, 86);
+}
+
 * {
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -247,6 +261,7 @@ div#container-calcolatrice{
     border-radius: 30px;
     margin: auto;
     cursor: pointer;
+    transition: box-shadow 0.5s ease-out;
 }
 
 div#container-calcolatrice.dark{
@@ -260,11 +275,11 @@ div#container-calcolatrice.light{
 }
 
 div#container-calcolatrice.dark:hover{
-    animation: ease-glow-dark 0.4s ease-in-out forwards;
+    box-shadow: var(--glow-dark);
 }
 
 div#container-calcolatrice.light:hover{
-    animation: ease-glow-light 0.4s ease-in-out forwards;
+    box-shadow: var(--glow-light);
 }
 
 div#container-risultato{
@@ -325,7 +340,7 @@ div.button{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease-out;
     font-size: clamp(1rem, 2.5vw, 1.75rem);
 }
 
@@ -347,11 +362,11 @@ div.button:hover{
 }
 
 div.button.dark:hover{
-    animation: ease-glow-dark 0.2s ease forwards;
+    box-shadow: var(--glow-dark);
 }
 
 div.button.light:hover{
-    animation: ease-glow-light 0.2s ease forwards;
+    box-shadow: var(--glow-light);
 }
 
 div.segno.dark{
@@ -392,58 +407,6 @@ svg.light{
 
 
 /* ANIMATIONS */
-@keyframes ease-glow-dark{
-    0% {
-        box-shadow:
-            0 0 2px rgb(95, 95, 95), 
-            0 0 5px rgb(79, 79, 79),
-            0 0 7px rgb(58, 58, 58),
-            0 0 10px rgb(31, 31, 31);
-    }
-
-    50% {
-        box-shadow:
-            0 0 5px rgb(133, 133, 133), 
-            0 0 10px rgb(117, 117, 117),
-            0 0 15px rgb(98, 98, 98),
-            0 0 20px rgb(67, 67, 67);
-    }
-
-    100% {
-        box-shadow:
-            0 0 10px rgb(200, 200, 200), 
-            0 0 20px rgb(174, 174, 174),
-            0 0 30px rgb(120, 120, 120),
-            0 0 40px rgb(86, 86, 86);
-    }
-}
-
-@keyframes ease-glow-light{
-    0% {
-        box-shadow:
-            0 0 2px rgb(255, 255, 255), 
-            0 0 5px rgb(220, 220, 220),
-            0 0 7px rgb(161, 161, 161),
-            0 0 10px rgb(127, 127, 127);
-    }
-
-    50% {
-        box-shadow:
-            0 0 5px rgb(237, 237, 237), 
-            0 0 10px rgb(190, 190, 190),
-            0 0 15px rgb(151, 151, 151),
-            0 0 20px rgb(104, 104, 104);
-    }
-
-    100% {
-        box-shadow:
-            0 0 10px rgb(211, 211, 211), 
-            0 0 20px rgb(174, 174, 174),
-            0 0 30px rgb(144, 144, 144),
-            0 0 40px rgb(93, 93, 93);
-    }
-}
-
 @keyframes tap-glow-dark{
     0% {
         box-shadow:
